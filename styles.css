@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background: url('images/pattern-background-desktop.svg'), var(--pale-blue);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+a[href="cancel"] {
+    text-decoration: none;
+    color: var(--desaturated-blue);
+    font-weight: 900;
+    font-size: 14px;
+}
+
+a[href="cancel"]:hover {
+    color: var(--dark-blue);
+}
+
+article.summary p {
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+article.grid {
+    background-color: var(--very-pale-blue);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+
+button { 
+    background-color: var(--bright-blue);
+    border-radius: 10px;
+    border: 0;
+    color: var(--very-pale-blue);
+    font-size: 14px;
+    font-weight: 900;
+    margin: 0 auto 1.5rem;
+    padding: 15px;
+    width: 80%;
+    display: block;
+}
+
+button:hover {
+    background-color: var(--desaturated-blue);
+    cursor: pointer;
+}
+
+main {
+    margin: 50px auto;
+    max-width: 450px;
+    background-color: var(--very-pale-blue);
+    border-radius: 25px;
+    padding-bottom: 2rem;
+}
+
+h2 {
+    color: var(--dark-blue);
+    font-size: 28px;
+    font-weight: 900;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+header img {
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+section {
+    margin: 20px auto;
+    color: var(--desaturated-blue);
+    line-height: 1.6;
+}
+
+span {
+    font-size: 12px;
+    font-weight: 900;
+    color: var(--bright-blue);
+}
+
+span:hover {
+    color: var(--desaturated-blue);
+}
+
+.container {
+    width: 100%;
+    padding: 0 55px;
+    margin-bottom: 2rem;
+}
+
+.dark-blue {
+    color: var(--dark-blue);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    justify-items: flex-start;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        max-width: 320px;
+    }
+
+    .container {
+        padding: 0 30px;
+    }
+}
